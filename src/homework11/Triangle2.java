@@ -12,16 +12,17 @@ public class Triangle2 {
 		int x = scan.nextInt();
 		int y = scan.nextInt();
 		int z = scan.nextInt();
-		
-		if(x + y <= z || x + z <= y || y + z <= x) {
+	
+
+		if(x + y <= z || x + z <= y || y + z <= x ) {
 			System.out.println("The numbers: "+x+", "+y+" and "+z+" cannot repersent a triangle");
 		}
 		
 		if(x == y && y == z && x == z) {
 			System.out.println("The numbers: "+x+", "+y+" and "+z+" represent an equilateral triangle");
 		}
-		
-		if(x * x+y*y == z*z || z*z+y*y==x*x || x*x+z*z == y*y) {
+	
+		if(Math.pow(x, 2)+ Math.pow(y, 2) == Math.pow(z, 2) || Math.pow(z, 2)+Math.pow(y, 2)==Math.pow(y, 2) || Math.pow(y, 2)+Math.pow(z, 2) == Math.pow(y, 2) ) {
 			System.out.println("The numbers: "+x+", "+y+" and "+z+" represent an right-angle triangle");
 		}
 		
@@ -32,6 +33,7 @@ public class Triangle2 {
 		if(x == y || y == z || z == x ) {
 			System.out.println("The numbers: "+x+", "+y+" and "+z+" represent an isosceles triangle");
 		}
+
 		
 	
 		
